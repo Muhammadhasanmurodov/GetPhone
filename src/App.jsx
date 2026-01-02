@@ -40,7 +40,7 @@ function App() {
           className="relative z-10 text-center px-6"
         >
           <div className="mx-auto mb-6 h-40 w-40 rounded-full border border-[#C9A24D] flex items-center justify-center">
-            <img src="./public/02.png" alt="GetPhone" />
+            <img src="/02.png" alt="GetPhone" />
           </div>
 
           <h1 className="text-4xl font-normal tracking-wide">
