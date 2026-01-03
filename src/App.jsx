@@ -53,6 +53,43 @@ function App() {
         </motion.div>
       </section>
 
+      {/* LINKS */}
+      <section className="py-24 px-6">
+        <motion.h2
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="text-center text-2xl font-medium mb-12"
+        >
+          Murojaat uchun
+        </motion.h2>
+
+        <div className="max-w-md mx-auto space-y-5">
+          {links.map((item, i) => {
+            const Icon = item.icon;
+            return (
+              <motion.a
+                key={i}
+                href={item.href}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.15 }}
+                viewport={{ once: true }}
+                whileHover={{ scale: 1.04 }}
+                className="group flex items-center justify-between rounded-full border border-[#C9A24D] bg-white px-6 py-4 shadow-sm"
+              >
+                <span className="flex items-center gap-3">
+                  <Icon className="h-5 w-5 text-[#C9A24D]" />
+                  <span className="font-light">{item.label}</span>
+                </span>
+                <span className="h-2 w-2 rounded-full bg-[#C9A24D] opacity-0 group-hover:opacity-100 transition" />
+              </motion.a>
+            );
+          })}
+        </div>
+      </section>
+
       {/* INFO BLOCK – ixcham */}
       <section className="py-28 px-6">
         <div className="max-w-3xl mx-auto">
@@ -98,43 +135,6 @@ function App() {
               </motion.div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* LINKS */}
-      <section className="py-24 px-6">
-        <motion.h2
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="text-center text-2xl font-medium mb-12"
-        >
-          Murojaat uchun
-        </motion.h2>
-
-        <div className="max-w-md mx-auto space-y-5">
-          {links.map((item, i) => {
-            const Icon = item.icon;
-            return (
-              <motion.a
-                key={i}
-                href={item.href}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.15 }}
-                viewport={{ once: true }}
-                whileHover={{ scale: 1.04 }}
-                className="group flex items-center justify-between rounded-full border border-[#C9A24D] bg-white px-6 py-4 shadow-sm"
-              >
-                <span className="flex items-center gap-3">
-                  <Icon className="h-5 w-5 text-[#C9A24D]" />
-                  <span className="font-light">{item.label}</span>
-                </span>
-                <span className="h-2 w-2 rounded-full bg-[#C9A24D] opacity-0 group-hover:opacity-100 transition" />
-              </motion.a>
-            );
-          })}
         </div>
       </section>
 
