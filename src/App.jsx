@@ -8,6 +8,11 @@ function App() {
       icon: Instagram,
       href: "https://www.instagram.com/getphone_uz",
     },
+    {
+      label: "Instagram account 2",
+      icon: Instagram,
+      href: "https://www.instagram.com/getphone_1?igsh=MTVod3RqaHRlanFteg%3D%3D&utm_source=qr",
+    },
     { label: "Telegram", icon: Send, href: "https://t.me/GetPhone_uz" },
     {
       label: "+998 91 124 22 21",
