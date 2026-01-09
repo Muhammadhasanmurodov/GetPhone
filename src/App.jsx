@@ -6,12 +6,12 @@ function App() {
     {
       label: "Instagram",
       icon: Instagram,
-      href: "https://www.instagram.com/getphone_uz",
+      href: "https://www.instagram.com/getphone_1?igsh=MTVod3RqaHRlanFteg%3D%3D&utm_source=qr",
     },
     {
       label: "Instagram account 2",
       icon: Instagram,
-      href: "https://www.instagram.com/getphone_1?igsh=MTVod3RqaHRlanFteg%3D%3D&utm_source=qr",
+      href: "https://www.instagram.com/getphone_uz",
     },
     { label: "Telegram", icon: Send, href: "https://t.me/GetPhone_uz" },
     {
@@ -128,9 +128,7 @@ function App() {
                 viewport={{ once: true }}
                 className="rounded-2xl border border-[#C9A24D]/30 bg-white/5 p-8 text-center"
               >
-                <h3 className="mb-3 text-lg text-[#C9A24D]">
-                  {item.title}
-                </h3>
+                <h3 className="mb-3 text-lg text-[#C9A24D]">{item.title}</h3>
                 <p className="text-sm text-gray-400 leading-relaxed">
                   {item.text}
                 </p>
